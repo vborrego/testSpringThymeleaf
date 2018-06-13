@@ -1,5 +1,5 @@
 # testSpringThymeleaf
-Sample Spring MVC with thymeleaf web application. 
+Sample Spring MVC with thymeleaf and AngularJS web application. 
 
 Uses Maven.
 
@@ -21,3 +21,6 @@ cp target/testSpringMVCThymeleaf-0.1.0.war /opt/apache-tomcat-7.0.53/webapps/
 
 # Test 
  * Access http://localhost:8081/testSpringMVCThymeleaf-0.1.0/hello?name=aaa
+ * Access http://localhost:8081/testSpringMVCThymeleaf-0.1.0/examplex to see AngularJS page
+ 
+ 

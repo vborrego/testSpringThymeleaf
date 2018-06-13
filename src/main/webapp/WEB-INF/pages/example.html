@@ -1,0 +1,22 @@
+<!doctype html>
+<html ng-app="todoApp">
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>        
+        <script th:src="@{/js/dummy.service.js}"></script>
+        <script th:src="@{/js/todo.js}"></script>        
+        <script th:src="@{/js/header.component.js}"></script>
+        
+    </head>
+    <body>
+        <header-desc></header-desc>
+        <h2>Todo AngularJS example</h2>
+        <div ng-controller="TodoListController as todoList">
+            <h1>{{ testx() }}</h1>
+            <h1>{{todoList.valuesX}}</h1>
+            <h1>{{selectedOption}}</h1>
+            <select ng-disabled="todoList.listDisabled" ng-model="selectedOption" ng-change="todoList.change()">
+                <option ng-repeat="val in todoList.valuesX" value="{{val}}">{{val}}</option>            
+            </select>
+        </div>
+    </body>
+</html>

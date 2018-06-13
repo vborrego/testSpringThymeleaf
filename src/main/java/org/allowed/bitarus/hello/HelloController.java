@@ -13,5 +13,10 @@ public class HelloController {
         model.addAttribute("name", name);
         return "greeting";
     }
+    
+    @RequestMapping("/examplex")
+    public String examplex() {
+        return "example";
+    }
 
 }
